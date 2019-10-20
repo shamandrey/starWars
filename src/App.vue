@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <span>STAR</span>
+    <img alt="Vue logo" src="./assets/logo.png"><img alt="Vue logo" src="./assets/logo.png">
+    <span>ARS</span>
+    <Navigation></Navigation>
+    <RandomPlanet></RandomPlanet>
+    <router-view class="router-view"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Navigation from './components/Navigation.vue'
+import RandomPlanet from "./components/RandomPlanet";
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    RandomPlanet: RandomPlanet,
+    Navigation: Navigation
   }
 }
 </script>
@@ -25,4 +30,8 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+  .router-view {
+    margin-top: 10px;
+  }
+
 </style>
