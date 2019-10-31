@@ -20,7 +20,7 @@
                 </div>
             </el-col>
 
-            <el-col loading="loadingCards"  v-loading="loading" :span="12">
+            <el-col :span="12">
                 <el-row v-for="(personConfig, index) in people" :key="index">
                     <div class="grid-content bg-purple-light">
                         <Card class="card"  :config="personConfig"></Card>
